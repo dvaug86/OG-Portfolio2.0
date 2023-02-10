@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-// import TitlePic from '../../public/assets/TitlePic.jpg'
+// npm run devimport TitlePic from '../../public/assets/TitlePic.jpg'
 
 const HomePage = () => {
   return (

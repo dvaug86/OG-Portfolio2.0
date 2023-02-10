@@ -21,7 +21,7 @@ const Skills = () => {
         <h2 className="py-4">My Tool Box</h2>
         {/* container for skill badges */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl shadow-black rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={HTML} width="64px" height="64px" alt="/" />
@@ -32,7 +32,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl shadow-black rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={CSS} width="64px" height="64px" alt="/" />
@@ -43,7 +43,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl shadow-black rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={JavaScript} width="64px" height="64px" alt="/" />
@@ -54,7 +54,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl shadow-black rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={ReactImg} width="64px" height="64px" alt="/" />
@@ -65,7 +65,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl shadow-black rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={TailWind} width="64px" height="64px" alt="/" />
@@ -76,7 +76,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl shadow-black rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={mongoLogo} width="64px" height="64px" alt="/" />
@@ -87,7 +87,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl shadow-black rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={GitHub} width="64px" height="64px" alt="/" />
@@ -98,7 +98,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl shadow-black rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={nodeLogo} width="64px" height="64px" alt="/" />
@@ -109,7 +109,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl shadow-black rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image src={NextJS} width="64px" height="64px" alt="/" />
