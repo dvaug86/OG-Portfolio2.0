@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import gymApp from '../public/assets/projectImgs/gymApp.png'
+ import gymApp from '../public/assets/projectImgs/gymApp.png'
 import {RiRadioButtonFill} from 'react-icons/ri'
 import Link from "next/link";
 
