@@ -5,7 +5,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Link from "next/link";
-import finalImg from '../../public/assets/finalImg.jpg'
+// import finalImg from '../../public/assets/finalImg.jpg'
 
 const Contact = () => {
   return (
