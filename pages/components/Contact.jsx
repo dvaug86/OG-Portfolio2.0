@@ -7,8 +7,8 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { useForm } from "react-hook-form";
 
 import Link from "next/link";
-import gymApp from '../../public/assets/projectImgs/gymApp.png'
-// import finalImg from '../../public/assets/finalImg.JPG'
+import finalImg from '../../public/assets/projectImgs/finalImg.JPG'
+
 
 const Contact = () => {
   const {
@@ -35,7 +35,7 @@ const Contact = () => {
               <div>
               <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
-                  src={gymApp}
+                  src={finalImg}
                   alt="/"
                 />
                 {/* <Image
