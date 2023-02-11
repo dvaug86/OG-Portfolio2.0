@@ -16,7 +16,7 @@ const ProjectItem = ({ title, backgroundImg, projectUrl }) => {
           {title}
         </h3>
         <p className="pb-4 pt-2 text-white text-center">ReactJS </p>
-        <Link href={projectUrl}>
+        <Link href={projectUrl ?? ''}>
           <p className="text-center py-3 rounded-lg bg-white text-black font-bold text-lg">
             More Info
           </p>
