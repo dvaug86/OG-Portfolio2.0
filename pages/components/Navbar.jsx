@@ -30,32 +30,32 @@ const Navbar = () => {
         <div>
           <div className="flex items-center text-xl">
             <ul className="items-center hidden md:flex ">
-              <Link href="/">
+              <Link href="/" scroll={false}>
                 <li className="ml-5 text-[#ecf0f3] text-sm uppercase hover:border-b border-[#ecf0f3]">
                   home
                 </li>
               </Link>
-              <Link href="/#about">
+              <Link href="/#about" scroll={false}>
                 <li className="ml-5 text-[#ecf0f3] text-sm uppercase hover:border-b border-[#ecf0f3]">
                   about
                 </li>
               </Link>
-              <Link href="/#skills">
+              <Link href="/#skills" scroll={false}>
                 <li className="ml-5 text-[#ecf0f3] text-sm uppercase hover:border-b border-[#ecf0f3]">
                   skills
                 </li>
               </Link>
-              <Link href="/#projects">
+              <Link href="/#projects" scroll={false}>
                 <li className="ml-5 text-[#ecf0f3] text-sm uppercase hover:border-b border-[#ecf0f3]">
                   projects
                 </li>
               </Link>
-              <Link href="/#contact">
+              <Link href="/#contact" scroll={false}>
                 <li className="ml-5 text-[#ecf0f3] text-sm uppercase hover:border-b border-[#ecf0f3]">
                   contact
                 </li>
               </Link>
-              <div className=" ml-5 flex-col">
+              <div className=" ml-5 flex-col" >
                 <AiOutlineLinkedin className="text-[#ecf0f3] text-2xl my-1 hover:border-b border-[#ecf0f3]" />
                 <AiOutlineGithub className="text-[#ecf0f3] text-2xl my-1 hover:border-b border-[#ecf0f3]" />
               </div>
