@@ -1,9 +1,10 @@
-import Head from 'next/head'
-import Navbar from './components/Navbar'
-import HomePage from './components/HomePage'
-import AboutMe from './components/AboutMe'
-import Skills from './components/Skills'
-import Contact from './components/Contact'
+import Head from "next/head";
+import Navbar from "./components/Navbar";
+import HomePage from "./components/HomePage";
+import AboutMe from "./components/AboutMe";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
+import Projects from "./components/Projects";
 
 export default function Home() {
   return (
@@ -18,9 +19,9 @@ export default function Home() {
       <HomePage />
       <AboutMe />
       <Skills />
-            {/* <Projects /> */}
+      <Projects />
 
       <Contact />
     </nav>
-  )
+  );
 }

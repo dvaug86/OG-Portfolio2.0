@@ -1,39 +1,29 @@
-// import Image from "next/image";
-// import Link from "next/link";
-// import React from "react";
-// import DrewsPlant from "../../public/assets/projectImgs/drewsPlant.png";
-// import GymApp from "../../public/assets/projectImgs/gymApp.png";
-// import ReactTetris from "../../public/assets/projectImgs/reactTetris.png";
-// import ProjectItem from "./ProjectItem";
-// const Projects = () => {
-//   return (
-//     <div id="projects" className="w-full">
-//       <div className="max-w-[1240px] mx-auto px-2 py-16">
-//         <p className="text-xl tracking-widest uppercase text-black ">
-//           Projects
-//         </p>
-//         <h2 className="py-4">What I've Built</h2>
-//         <div className="grid md:grid-cols-2 gap-8">
-//           <ProjectItem
-//             title="Drew's Plant Nursery"
-//             backgroundImg={DrewsPlant}
-//             projectUrl="/drews"
-//           />
-//           <ProjectItem
-//             title="Gym App"
-//             backgroundImg={GymApp}
-//             projectUrl="/gym"
-//           />
-//           <ProjectItem
-//             title="Tetris with React"
-//             backgroundImg={ReactTetris}
-//             projectUrl="/tetris"
-//           />
-          
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
-// export default Projects;
+const ProjectItem = ({ title, backgroundImg, projectUrl }) => {
+  return (
+    <div className="relative flex flex-items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-black text-white">
+      <Image
+      
+        className="rounded-xl group-hover:opacity-10"
+        src={backgroundImg}
+        alt="/"
+      /> 
+      <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <h3 className="text-2xl text-white tracking-wider text-center">
+          {title}
+        </h3>
+        <p className="pb-4 pt-2 text-white text-center">ReactJS </p>
+        <Link href={projectUrl}>
+          <p className="text-center py-3 rounded-lg bg-white text-black font-bold text-lg">
+            More Info
+          </p>
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default ProjectItem;
