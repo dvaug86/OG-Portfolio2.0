@@ -7,7 +7,7 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { useForm } from "react-hook-form";
 
 import Link from "next/link";
-import finalImg from '../../public/assets/finalImg.JPG'
+// import finalImg from '../../public/assets/finalImg.JPG'
 
 const Contact = () => {
   const {
@@ -32,11 +32,11 @@ const Contact = () => {
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-black rounded-xl p-4 ">
             <div className="lg:p-4 h-full ">
               <div>
-              <Image
+              {/* <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
                   src={finalImg}
                   alt="/"
-                />
+                /> */}
               </div>
               <div>
                 <h2 className="py-2">David</h2>
