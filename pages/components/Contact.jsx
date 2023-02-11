@@ -7,7 +7,7 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { useForm } from "react-hook-form";
 
 import Link from "next/link";
-import contactImg from "../../public/assets/contactImg.jpg"
+import contactImg from "../../public/assets/contactImg.png"
 
 const Contact = () => {
   const {
