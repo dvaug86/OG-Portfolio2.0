@@ -30,7 +30,7 @@ const Navbar = () => {
         <div>
           <div className="flex items-center text-xl">
             <ul className="items-center hidden md:flex ">
-              <Link href="/" scroll={false}>
+              <Link href="/#home" scroll={false}>
                 <li className="ml-5 text-[#ecf0f3] text-sm uppercase hover:border-b border-[#ecf0f3]">
                   home
                 </li>
