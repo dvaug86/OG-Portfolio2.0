@@ -1,13 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaFileAlt } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { useForm } from "react-hook-form";
-
 import Link from "next/link";
-import contactImg from "../../public/assets/contactImg.png"
+import contactImg from "../../public/assets/contactImg.png";
+// import resume from "../../public/assets/docs/dvResume.pdf";
 
 const Contact = () => {
   const {
@@ -32,12 +31,11 @@ const Contact = () => {
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-black rounded-xl p-4 ">
             <div className="lg:p-4 h-full ">
               <div>
-              <Image
+                <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
                   src={contactImg}
                   alt="/"
                 />
-                
               </div>
               <div>
                 <h2 className="py-2">David</h2>
@@ -50,17 +48,21 @@ const Contact = () => {
               <div>
                 <p className="uppercase pt-8">Connect with me</p>
                 <div className="flex items-center justify-between py-4">
+                  <Link
+                    href="https://www.linkedin.com/in/david-vaughan-97492774/"
+                    target="_blank"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaLinkedin />
+                    </div>
+                  </Link>
+                  <Link href="https://github.com/dvaug86" target="_blank">
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaGithub />
+                    </div>
+                  </Link>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaLinkedin />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaGithub />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <BsFillPersonLinesFill />
+                    <FaFileAlt />
                   </div>
                 </div>
               </div>
@@ -74,7 +76,7 @@ const Contact = () => {
               <form
                 target="_blank"
                 onSubmit={onSubmit}
-                action="https://formsubmit.co/c84de36b3c46270817e653961d0b55ac" 
+                action="https://formsubmit.co/c84de36b3c46270817e653961d0b55ac"
                 method="POST"
               >
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
@@ -83,7 +85,6 @@ const Contact = () => {
                     <input
                       className="border-2 rounded-lg p-3 border-gray-300"
                       type="text"
-                      placeholder="NAME"
                       {...register("name", {
                         required: true,
                         maxLength: 100,
@@ -104,7 +105,6 @@ const Contact = () => {
                   <input
                     className="border-2 rounded-lg p-3 border-gray-300"
                     type="text"
-                    placeholder="EMAIL"
                     {...register("email", {
                       required: true,
                       pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -123,8 +123,20 @@ const Contact = () => {
                   <label className="uppercase text-sm py-2">Subject</label>
                   <input
                     className="border-2 rounded-lg p-3 border-gray-300"
-                    type="text"
+                    name="subject"
+                    {...register("subject", {
+                      required: true,
+                      maxLength: 200,
+                    })}
                   />
+                  {errors.subject && (
+                    <p className="text-red mt-1">
+                      {errors.subject.type === "required" &&
+                        "This field is required."}
+                      {errors.subject.type === "maxLength" &&
+                        "Max length is 2000 char."}
+                    </p>
+                  )}
                 </div>
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Message</label>
@@ -132,7 +144,6 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 border-gray-300"
                     rows="10"
                     name="message"
-                    placeholder="MESSAGE"
                     cols="50"
                     {...register("message", {
                       required: true,

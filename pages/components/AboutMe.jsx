@@ -9,8 +9,8 @@ const AboutMe = () => {
         <div className="mt-10 grid md:grid-cols-4 justify-between gap-10 md:flex mx-5 md:mx-auto">
           {/* left side */}
           <div>
-            <div className=" col-span-3 w-full h-full shadow-xl shadow-gray-400 bg-black rounded-xl p-4">
-              <div className="lg:p-4 h-full">
+            <div className=" col-span-3 w-full h-full shadow-xl shadow-gray-400 bg-black rounded-xl p-2">
+              <div className="lg:p-2 h-full">
                 <div>
                   <Image
                     className="rounded-xl hover:scale-105 ease-in duration-300"

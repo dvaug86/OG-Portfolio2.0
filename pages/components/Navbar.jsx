@@ -5,10 +5,9 @@ import {
   AiOutlineGithub,
   AiOutlineLinkedin,
   AiOutlineMenu,
-  AiOutlineMail,
+  
 } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-
+import {FaFileAlt} from "react-icons/fa"
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -55,9 +54,16 @@ const Navbar = () => {
                   contact
                 </li>
               </Link>
-              <div className=" ml-5 flex-col" >
-                <AiOutlineLinkedin className="text-[#ecf0f3] text-2xl my-1 hover:border-b border-[#ecf0f3]" />
-                <AiOutlineGithub className="text-[#ecf0f3] text-2xl my-1 hover:border-b border-[#ecf0f3]" />
+              <div className=" ml-5 flex-col">
+                <Link
+                  href="https://www.linkedin.com/in/david-vaughan-97492774/"
+                  target="_blank"
+                >
+                  <AiOutlineLinkedin className="text-[#ecf0f3] text-2xl my-1 hover:border-b border-[#ecf0f3]" />
+                </Link>
+                <Link href="https://github.com/dvaug86" target="_blank">
+                  <AiOutlineGithub className="text-[#ecf0f3] text-2xl my-1 hover:border-b border-[#ecf0f3]" />
+                </Link>
               </div>
             </ul>
           </div>
@@ -68,7 +74,9 @@ const Navbar = () => {
       </div>
       {/* overlay */}
       <div
-        className={nav ? "md:hidden fixed right-0 top-0 w-full h-screen bg-black/80" : ""}
+        className={
+          nav ? "md:hidden fixed right-0 top-0 w-full h-screen bg-black/80" : ""
+        }
       >
         <div
           className={
@@ -124,17 +132,21 @@ const Navbar = () => {
               <p className="uppercase text-xl">Connections</p>
               <div className="border-t border-gray-300 my-4"></div>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
+                <Link
+                  href="https://www.linkedin.com/in/david-vaughan-97492774/"
+                  target="_blank"
+                >
+                  <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <AiOutlineLinkedin />
+                  </div>
+                </Link>
+                <Link href="https://github.com/dvaug86" target="_blank">
+                  <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <AiOutlineGithub />
+                  </div>
+                </Link>
                 <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineLinkedin />
-                </div>
-                <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineGithub />
-                </div>
-                <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsFillPersonLinesFill />
+                  <FaFileAlt />
                 </div>
               </div>
             </div>
