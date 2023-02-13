@@ -31,7 +31,7 @@ li{
 }
 
 button{
-  @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-black text-white
+  @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-blue-500 text-yellow-300
 }
 
 .custom-img {

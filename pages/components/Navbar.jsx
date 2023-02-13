@@ -5,9 +5,8 @@ import {
   AiOutlineGithub,
   AiOutlineLinkedin,
   AiOutlineMenu,
-  
 } from "react-icons/ai";
-import {FaFileAlt} from "react-icons/fa"
+import { FaFileAlt } from "react-icons/fa";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -16,41 +15,41 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-24 shadow-2xl shadow-black z-[100] bg-black">
+    <div className="fixed w-full h-24 shadow-2xl shadow-black/70 z-[100] bg-black">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         {/* left side */}
-        <h2 className="hidden md:flex uppercase text-[#ecf0f3] ">
+        <h2 className="hidden md:flex uppercase text-yellow-300">
           {" "}
           david vaughan
         </h2>
-        <h2 className="md:hidden uppercase text-[#ecf0f3] ml-5 "> dv</h2>
+        <h2 className="md:hidden uppercase text-yellow-300 ml-5"> dv</h2>
 
         {/* right */}
         <div>
           <div className="flex items-center text-xl">
             <ul className="items-center hidden md:flex ">
               <Link href="/#home" scroll={false}>
-                <li className="ml-5 text-[#ecf0f3] text-sm uppercase hover:border-b border-[#ecf0f3]">
+                <li className="ml-5 text-yellow-300 text-sm uppercase hover:border-b border-[#ecf0f3]">
                   home
                 </li>
               </Link>
               <Link href="/#about" scroll={false}>
-                <li className="ml-5 text-[#ecf0f3] text-sm uppercase hover:border-b border-[#ecf0f3]">
+                <li className="ml-5 text-yellow-300 text-sm uppercase hover:border-b border-[#ecf0f3]">
                   about
                 </li>
               </Link>
               <Link href="/#skills" scroll={false}>
-                <li className="ml-5 text-[#ecf0f3] text-sm uppercase hover:border-b border-[#ecf0f3]">
+                <li className="ml-5 text-yellow-300 text-sm uppercase hover:border-b border-[#ecf0f3]">
                   skills
                 </li>
               </Link>
               <Link href="/#projects" scroll={false}>
-                <li className="ml-5 text-[#ecf0f3] text-sm uppercase hover:border-b border-[#ecf0f3]">
+                <li className="ml-5 text-yellow-300 text-sm uppercase hover:border-b border-[#ecf0f3]">
                   projects
                 </li>
               </Link>
               <Link href="/#contact" scroll={false}>
-                <li className="ml-5 text-[#ecf0f3] text-sm uppercase hover:border-b border-[#ecf0f3]">
+                <li className="ml-5 text-yellow-300 text-sm uppercase hover:border-b border-[#ecf0f3]">
                   contact
                 </li>
               </Link>
@@ -59,16 +58,16 @@ const Navbar = () => {
                   href="https://www.linkedin.com/in/david-vaughan-97492774/"
                   target="_blank"
                 >
-                  <AiOutlineLinkedin className="text-[#ecf0f3] text-2xl my-1 hover:border-b border-[#ecf0f3]" />
+                  <AiOutlineLinkedin className="text-yellow-300 text-2xl my-1 hover:border-b border-[#ecf0f3]" />
                 </Link>
                 <Link href="https://github.com/dvaug86" target="_blank">
-                  <AiOutlineGithub className="text-[#ecf0f3] text-2xl my-1 hover:border-b border-[#ecf0f3]" />
+                  <AiOutlineGithub className="text-yellow-300 text-2xl my-1 hover:border-b border-[#ecf0f3]" />
                 </Link>
               </div>
             </ul>
           </div>
           <div onClick={handleNav} className="md:hidden cursor-pointer">
-            <AiOutlineMenu className=" text-[#ecf0f3] text-xl text-bold mr-5" />
+            <AiOutlineMenu className=" text-yellow-300 text-xl text-bold mr-5" />
           </div>
         </div>
       </div>
@@ -145,9 +144,9 @@ const Navbar = () => {
                     <AiOutlineGithub />
                   </div>
                 </Link>
-                <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                {/* <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaFileAlt />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
