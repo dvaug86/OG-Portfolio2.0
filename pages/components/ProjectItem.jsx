@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ProjectItem = ({ title, backgroundImg, projectUrl }) => {
   return (
-    <div className="relative flex flex-items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group  bg-blue-500 hover:bg-black/90 text-yellow-300">
+    <div className="relative flex flex-items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group  bg-blue-500 hover:bg-black/90 text-white">
       <Image
       
         className="rounded-xl group-hover:opacity-10"
@@ -12,11 +12,11 @@ const ProjectItem = ({ title, backgroundImg, projectUrl }) => {
         alt="/"
       /> 
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
-        <h3 className="text-2xl text-yellow-300 tracking-wider text-center mb-2">
+        <h3 className="text-2xl text-white tracking-wider text-center mb-2">
           {title}
         </h3>
         <Link href={projectUrl ?? ''}>
-          <p className="text-center py-3 rounded-lg bg-blue-500 text-yellow-300 font-bold text-lg">
+          <p className="text-center py-3 rounded-lg bg-blue-500 text-white font-bold text-lg">
             More Info
           </p>
         </Link>

@@ -3,10 +3,11 @@ import Image from "next/image";
 import aboutImgTemp from "../../public/assets/aboutImgTemp.jpg";
 const AboutMe = () => {
   return (
-    <div id="about" className="w-full text-center lg:h-screen pt-24 pb-32">
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full my-5">
-        <h1 className="text-5xl tracking-widest uppercase my-4">From civil/structrual engineering to full stack engineering </h1>
-        <div className="mt-10 grid md:grid-cols-4 justify-between gap-10 md:flex mx-5 md:mx-auto">
+    <div id="about" className="w-full h-full pt-24 pb-16">
+      <div className="max-w-[1240px] mx-auto flex flex-col justify-center  h-full my-5">
+        <h1 className="text-5xl tracking-widest uppercase text-center w-full object-contain mx-auto">From civil / structrual engineering  </h1>
+        <h1 className="text-5xl tracking-widest uppercase text-center w-full object-contain mx-auto"> to full stack engineering </h1>
+        <div className="mt-10 grid md:grid-cols-4  justify-between gap-10 md:flex mx-5 md:mx-auto">
           {/* left side */}
           <div>
             <div className=" col-span-3 w-full h-full shadow-xl shadow-gray-400 bg-blue-500 rounded-xl p-2">

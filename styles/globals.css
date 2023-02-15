@@ -10,7 +10,7 @@ html {
 
 @layer base {
   body{
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
+    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide  text-[#ecfof3]
   }
 }
 
@@ -31,7 +31,7 @@ li{
 }
 
 button{
-  @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-blue-500 text-yellow-300
+  @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-blue-500 text-white
 }
 
 .custom-img {
