@@ -20,7 +20,6 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         {/* left side */}
         <motion.div
-          className="text-center md:text-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -108,7 +107,7 @@ const Navbar = () => {
               : "fixed right-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
-          <div className="flex w-full items-center justify-between">
+          <div className="flex w-full  justify-between">
             <h2 className=" uppercase   "> dv</h2>
 
             <div

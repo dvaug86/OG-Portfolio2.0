@@ -4,6 +4,7 @@ import { FaLinkedin, FaGithub, FaFileAlt } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { useForm } from "react-hook-form";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import contactImg from "../../public/assets/contactImg.png";
 // import resume from "../../public/assets/dvResume.pdf";
@@ -23,12 +24,24 @@ const Contact = () => {
   };
 
   return (
+    <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.75 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
     <div id="contact" className="w-full h-full pt-24 pb-16">
       <div className="max-w-[1240px] mx-auto   px-2 py-16">
         <p className="text-xl tracking-widest uppercase text-black">contact</p>
         <h2 className="py-4">Get In Touch</h2>
+        
         <div className="grid lg:grid-cols-5  gap-8">
           {/* left */}
+      
           <div className=" col-span-3 lg:col-span-2 h-full  shadow-xl shadow-gray-400 border-8 border-blue-500 rounded-xl p-4 ">
             <div className="lg:p-4 h-full ">
               <div>
@@ -187,7 +200,7 @@ const Contact = () => {
           </Link>
         </div> 
       </div>
-    </div>
+    </div></motion.div>
   );
 };
 
