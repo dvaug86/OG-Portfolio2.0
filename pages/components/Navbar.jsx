@@ -6,6 +6,7 @@ import {
   AiOutlineLinkedin,
   AiOutlineMenu,
 } from "react-icons/ai";
+import { motion } from "framer-motion";
 import { FaFileAlt } from "react-icons/fa";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -18,15 +19,37 @@ const Navbar = () => {
     <div className="fixed w-screen  h-24 shadow-2xl shadow-black/70 z-[100] bg-black">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         {/* left side */}
+        <motion.div
+          className="text-center md:text-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -100 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
         <h2 className="hidden md:flex uppercase text-white">
-          
           david vaughan
         </h2>
+        </motion.div>
         <h2 className="md:hidden uppercase text-white ml-5"> dv</h2>
 
         {/* right */}
         <div>
           <div className="flex items-center text-xl">
+          <motion.div
+          className="text-center md:text-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: 100 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
             <ul className="items-center hidden md:flex ">
               <Link href="/#home" scroll={false}>
                 <li className="ml-5 text-white text-sm uppercase hover:border-b border-[#ecf0f3]">
@@ -53,18 +76,19 @@ const Navbar = () => {
                   contact
                 </li>
               </Link>
-              <div className=" ml-5 flex-col">
+              
                 <Link
                   href="https://www.linkedin.com/in/david-vaughan-97492774/"
                   target="_blank"
                 >
-                  <AiOutlineLinkedin className="text-white text-2xl my-1 hover:border-b border-[#ecf0f3]" />
+                  <AiOutlineLinkedin className="text-white text-2xl my-1 ml-5 hover:border-b border-[#ecf0f3]" />
                 </Link>
                 <Link href="https://github.com/dvaug86" target="_blank">
-                  <AiOutlineGithub className="text-white text-2xl my-1 hover:border-b border-[#ecf0f3]" />
+                  <AiOutlineGithub className="text-white text-2xl my-1 ml-5 hover:border-b border-[#ecf0f3]" />
                 </Link>
-              </div>
+              
             </ul>
+            </motion.div>
           </div>
           <div onClick={handleNav} className="md:hidden cursor-pointer">
             <AiOutlineMenu className=" text-white text-xl text-bold mr-5" />
