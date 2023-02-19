@@ -29,53 +29,51 @@ const Navbar = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-        <h2 className="hidden md:flex uppercase text-white">
-          david vaughan
-        </h2>
+          <h2 className="hidden md:flex uppercase text-white">david vaughan</h2>
         </motion.div>
         <h2 className="md:hidden uppercase text-white ml-5"> dv</h2>
 
         {/* right */}
         <div>
           <div className="flex items-center text-xl">
-          <motion.div
-          className="text-center md:text-center"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, x: 100 },
-            visible: { opacity: 1, x: 0 },
-          }}
-        >
-            <ul className="items-center hidden md:flex ">
-              <Link href="/#home" scroll={false}>
-                <li className="ml-5 text-white text-sm uppercase hover:border-b border-[#ecf0f3]">
-                  home
-                </li>
-              </Link>
-              <Link href="/#about" scroll={false}>
-                <li className="ml-5 text-white text-sm uppercase hover:border-b border-[#ecf0f3]">
-                  about
-                </li>
-              </Link>
-              <Link href="/#skills" scroll={false}>
-                <li className="ml-5 text-white text-sm uppercase hover:border-b border-[#ecf0f3]">
-                  skills
-                </li>
-              </Link>
-              <Link href="/#projects" scroll={false}>
-                <li className="ml-5 text-white text-sm uppercase hover:border-b border-[#ecf0f3]">
-                  projects
-                </li>
-              </Link>
-              <Link href="/#contact" scroll={false}>
-                <li className="ml-5 text-white text-sm uppercase hover:border-b border-[#ecf0f3]">
-                  contact
-                </li>
-              </Link>
-              
+            <motion.div
+              className="text-center md:text-center"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: 100 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              <ul className="items-center hidden md:flex ">
+                <Link href="/#home" scroll={false}>
+                  <li className="ml-5 text-white text-sm uppercase hover:border-b border-[#ecf0f3]">
+                    home
+                  </li>
+                </Link>
+                <Link href="/#about" scroll={false}>
+                  <li className="ml-5 text-white text-sm uppercase hover:border-b border-[#ecf0f3]">
+                    about
+                  </li>
+                </Link>
+                <Link href="/#skills" scroll={false}>
+                  <li className="ml-5 text-white text-sm uppercase hover:border-b border-[#ecf0f3]">
+                    skills
+                  </li>
+                </Link>
+                <Link href="/#projects" scroll={false}>
+                  <li className="ml-5 text-white text-sm uppercase hover:border-b border-[#ecf0f3]">
+                    projects
+                  </li>
+                </Link>
+                <Link href="/#contact" scroll={false}>
+                  <li className="ml-5 text-white text-sm uppercase hover:border-b border-[#ecf0f3]">
+                    contact
+                  </li>
+                </Link>
+
                 <Link
                   href="https://www.linkedin.com/in/david-vaughan-97492774/"
                   target="_blank"
@@ -85,8 +83,7 @@ const Navbar = () => {
                 <Link href="https://github.com/dvaug86" target="_blank">
                   <AiOutlineGithub className="text-white text-2xl my-1 ml-5 hover:border-b border-[#ecf0f3]" />
                 </Link>
-              
-            </ul>
+              </ul>
             </motion.div>
           </div>
           <div onClick={handleNav} className="md:hidden cursor-pointer">
