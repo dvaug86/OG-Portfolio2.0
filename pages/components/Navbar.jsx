@@ -19,6 +19,7 @@ const Navbar = () => {
     <div className="fixed w-screen  h-24 shadow-2xl shadow-black/70 z-[100] bg-black">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         {/* left side */}
+       <h2 className="md:hidden uppercase text-white ml-5"> dv</h2> 
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -31,7 +32,7 @@ const Navbar = () => {
         >
           <h2 className="hidden md:flex uppercase text-white">david vaughan</h2>
         </motion.div>
-        <h2 className="md:hidden uppercase text-white ml-5"> dv</h2>
+        
 
         {/* right */}
         <div>
