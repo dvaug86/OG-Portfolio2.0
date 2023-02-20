@@ -10,8 +10,8 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full  h-full pt-24 pb-16 ">
-      <div className="max-w-[1240px] mx-auto  px-2 py-16">
+    <div id="projects" className="bg-[#D4D8DA] w-full h-full pt-24 pb-16 ">
+      <div className="max-w-[1240px] mx-auto  flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-black ">
           Projects
         </p>
@@ -21,7 +21,7 @@ const Projects = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
           variants={{
             hidden: { opacity: 0, x:0 },
             visible: { opacity: 1, x: 0},
@@ -37,7 +37,7 @@ const Projects = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
           variants={{
             hidden: { opacity: 0, x:0 },
             visible: { opacity: 1, x: 0},
@@ -53,7 +53,7 @@ const Projects = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay:0.2, duration: 1 }}
+          transition={{ delay:0.6, duration: 1 }}
           variants={{
             hidden: { opacity: 0, x:0},
             visible: { opacity: 1, x: 0 },
@@ -69,7 +69,7 @@ const Projects = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay:0.4, duration: 1 }}
+          transition={{ delay:0.8, duration: 1 }}
           variants={{
             hidden: { opacity: 0, x:0},
             visible: { opacity: 1, x: 0 },

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   AiOutlineClose,
   AiOutlineGithub,
@@ -16,10 +16,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-screen  h-24 shadow-2xl shadow-black/70 z-[100] bg-black">
+    <div className="fixed w-screen h-24 shadow-2xl shadow-black/70 z-[100] bg-black">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         {/* left side */}
-       <h2 className="md:hidden uppercase text-white ml-5"> dv</h2> 
+        <h2 className="md:hidden uppercase text-white ml-5"> dv</h2>
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -32,8 +32,6 @@ const Navbar = () => {
         >
           <h2 className="hidden md:flex uppercase text-white">david vaughan</h2>
         </motion.div>
-        
-
         {/* right */}
         <div>
           <div className="flex items-center text-xl">
@@ -74,7 +72,6 @@ const Navbar = () => {
                     contact
                   </li>
                 </Link>
-
                 <Link
                   href="https://www.linkedin.com/in/david-vaughan-97492774/"
                   target="_blank"
@@ -92,7 +89,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {/* overlay */}
+
+      {/* navbar cellphone menu */}
       <div
         className={
           nav ? "md:hidden fixed right-0 top-0 w-full h-screen bg-black/80" : ""
@@ -107,7 +105,6 @@ const Navbar = () => {
         >
           <div className="flex w-full  justify-between">
             <h2 className=" uppercase   "> dv</h2>
-
             <div
               onClick={handleNav}
               className="rounded-full shadow-xl shadow-black  cursor-pointer"
@@ -118,7 +115,7 @@ const Navbar = () => {
           <div className="border-b border-gray-300 my-4"></div>
 
           <div className="py-4 flex flex-col">
-            {/* navbar links */}
+            {/* navbar links for minimenu */}
             <ul className="uppercase">
               <Link href="/#home" scroll={false}>
                 <li onClick={() => setNav(false)} className="py-4 text-sm">

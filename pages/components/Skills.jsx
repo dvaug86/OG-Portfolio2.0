@@ -26,7 +26,7 @@ const Skills = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isInView, setIsInView] = useState(false);
   return (
-    <div id="skills" className="w-full h-full  pt-24 pb-16 ">
+    <div id="skills" className="w-full h-full pt-24 pb-16 ">
       <div className="max-w-[1240px] mx-auto  flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-black">Skills</p>
         <h2 className="py-4">My Tool Box</h2>
@@ -42,7 +42,7 @@ const Skills = () => {
           viewport={{ once: true }}
           onViewportEnter={() => setIsInView(true)}
         >
-          <div  className="  grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div  className="  grid md:grid-cols-2 lg:grid-cols-4 gap-8 p-2">
             <div className=" p-6 shadow-xl shadow-gray-400 bg-gray-700 border-4  border-blue-500 rounded-xl hover:scale-105 ease-in duration-300">
               <div className="flex flex-col  gap-4 justify-center items-center">
                 <div className="m-auto">
@@ -77,11 +77,11 @@ const Skills = () => {
             </div>
 
             <div className="p-6 shadow-xl shadow-gray-400 bg-gray-700 border-4  border-blue-500 rounded-xl hover:scale-105 ease-in duration-300">
-              <div className="flex flex-col  gap-4 justify-center items-center">
+              <div className="flex flex-col  gap-10 justify-between items-center">
                 <div className="m-auto">
                   <Image src={NextJS} width="32px" height="32px" alt="/" onLoad={() => setIsLoaded(true)}/>
                 </div>
-                <div className="flex flex-col  gap-4 justify-center items-center">
+                <div className="items-center  mt-[3.07px]">
                   <h3 className="text-3xl text-white">NextJS</h3>
                 </div>
               </div>
@@ -92,7 +92,7 @@ const Skills = () => {
                 <div className="m-auto">
                   <Image src={nodeLogo} width="32px" height="32px" alt="/" onLoad={() => setIsLoaded(true)} />
                 </div>
-                <div className="flex flex-col  gap-4 justify-center items-center">
+                <div className="items-center">
                   <h3 className="text-3xl text-white">NodeJS</h3>
                 </div>
               </div>
@@ -110,11 +110,11 @@ const Skills = () => {
             </div>
 
             <div className="p-6 shadow-xl shadow-gray-400 bg-gray-700 border-4  border-blue-500 rounded-xl hover:scale-105 ease-in duration-300">
-              <div className="flex flex-col  gap-4 justify-center items-center">
+              <div className="flex flex-col  gap-14 justify-center items-center">
                 <div className="m-auto">
                   <Image src={bootstrap} width="32px" height="32px" alt="/" onLoad={() => setIsLoaded(true)} />
                 </div>
-                <div className="flex flex-col  gap-4 justify-center items-center">
+                <div className="items-center mt-[2.15px]">
                   <h3 className="text-3xl text-white">Bootstrap</h3>
                 </div>
               </div>
@@ -131,12 +131,12 @@ const Skills = () => {
               </div>
             </div>
 
-            <div className="p-6 shadow-xl shadow-gray-400 bg-gray-700 border-4  border-blue-500 rounded-xl hover:scale-105 ease-in duration-300">
-              <div className="flex flex-col  gap-4 justify-center items-center">
+            <div className="p-6 shadow-xl shadow-gray-400 bg-gray-700 border-12  border-blue-500 rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="flex flex-col  gap-20 justify-center items-center">
                 <div className="m-auto">
                   <Image src={mysql} width="32px" height="32px" alt="/" onLoad={() => setIsLoaded(true)} />
                 </div>
-                <div className="flex flex-col  gap-4 justify-center items-center">
+                <div className="items-center mt-[7.35px]">
                   <h3 className="text-3xl text-white">MySQL</h3>
                 </div>
               </div>

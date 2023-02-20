@@ -34,8 +34,8 @@ const Contact = () => {
         visible: { opacity: 1, y: 0 },
       }}
     >
-      <div id="contact" className="w-full h-full pt-24 pb-16">
-        <div className="max-w-[1240px] mx-auto   px-2 py-16">
+      <div id="contact" className="bg-[#D4D8DA] w-full h-full pt-24 pb-16 ">
+      <div className="max-w-[1240px] mx-auto  flex flex-col justify-center h-full">
           <p className="text-xl tracking-widest uppercase text-black">
             contact
           </p>
@@ -44,7 +44,7 @@ const Contact = () => {
           <div className="grid lg:grid-cols-5  gap-8">
             {/* left */}
 
-            <div className=" col-span-3 lg:col-span-2 h-full bg-gray-300 shadow-xl shadow-gray-400 border-4 border-blue-500 rounded-xl p-4 ">
+            <div className=" col-span-3 lg:col-span-2 h-full bg-[#ecf0f3] shadow-xl shadow-gray-400 border-4 border-blue-500 rounded-xl p-4 ">
               <div>
                 <div className="lg:p-4 h-full ">
                   <div>
@@ -57,8 +57,8 @@ const Contact = () => {
                   <div>
                     <h2 className="py-2 uppercase">David Vaughan</h2>
                     <p className="text-xl">Full-Stack Developer</p>
-                    <p className="my-15 -py-4">
-                      I am available for freelance or full-time positions.
+                    <p className="my-15">
+                      I am available for full-time positions or freelance work.
                     </p>
                   </div>
                 </div>
@@ -69,12 +69,12 @@ const Contact = () => {
                       href="https://www.linkedin.com/in/david-vaughan-97492774/"
                       target="_blank"
                     >
-                      <div className="rounded-full shadow-lg bg-blue-500 text-white shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <div className="rounded-full  bg-blue-500 text-white shadow-xl shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <FaLinkedin />
                       </div>
                     </Link>
                     <Link href="https://github.com/dvaug86" target="_blank">
-                      <div className="rounded-full shadow-lg  bg-blue-500 text-white shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <div className="rounded-full   bg-blue-500 text-white shadow-xl shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <FaGithub />
                       </div>
                     </Link>
@@ -98,7 +98,7 @@ const Contact = () => {
 
             {/* right */}
 
-            <div className="col-span-3  h-auto shadow-xl shadow-gray-400 bg-gray-300 border-4 border-blue-500 rounded-xl lg:p-4">
+            <div className="col-span-3  h-auto  shadow-xl shadow-gray-400 bg-[#ecf0f3] border-4 border-blue-500 rounded-xl lg:p-4">
               <div className="p-4">
                 <form
                   target="_blank"
@@ -106,11 +106,11 @@ const Contact = () => {
                   action="https://formsubmit.co/c84de36b3c46270817e653961d0b55ac"
                   method="POST"
                 >
-                  <div className="grid md:grid-cols-2 gap-4 w-full py-2">
+                  <div className="grid md:grid-cols-2  gap-4 w-full py-2">
                     <div className="flex flex-col">
                       <label className="uppercase text-sm py-2">Name</label>
                       <input
-                        className="border-2 rounded-lg p-3 border-gray-400"
+                        className="border-2 rounded-lg p-3 bg-[#D4D8DA] border-blue-500"
                         type="text"
                         {...register("name", {
                           required: true,
@@ -130,7 +130,7 @@ const Contact = () => {
                   <div className="flex flex-col py-2">
                     <label className="uppercase text-sm py-2">Email</label>
                     <input
-                      className="border-2 rounded-lg p-3 border-gray-400"
+                      className="border-2 rounded-lg p-3 bg-[#D4D8DA] border-blue-500"
                       type="text"
                       {...register("email", {
                         required: true,
@@ -149,7 +149,7 @@ const Contact = () => {
                   <div className="flex flex-col py-2">
                     <label className="uppercase text-sm py-2">Subject</label>
                     <input
-                      className="border-2 rounded-lg p-3 border-gray-400"
+                      className="border-2 rounded-lg p-3 bg-[#D4D8DA] border-blue-500"
                       name="subject"
                       {...register("subject", {
                         required: true,
@@ -168,7 +168,7 @@ const Contact = () => {
                   <div className="flex flex-col py-2">
                     <label className="uppercase text-sm py-2">Message</label>
                     <textarea
-                      className="border-2 w-full  rounded-lg p-3 border-gray-400"
+                      className="border-2 w-full  rounded-lg p-3 bg-[#D4D8DA] border-blue-500"
                       rows="10"
                       columns="50"
                       name="message"
@@ -196,7 +196,7 @@ const Contact = () => {
 
           <div className="flex justify-center py-12">
             <Link href="/#about" scroll={false}>
-              <div className="rounded-full bg-blue-500 shadow-lg shadow-gray-300 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className="rounded-full bg-blue-500 shadow-xl shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                 <HiOutlineChevronDoubleUp className="text-white" size={30} />
               </div>
             </Link>

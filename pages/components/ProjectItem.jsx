@@ -4,10 +4,10 @@ import Image from "next/image";
 
 const ProjectItem = ({ title, backgroundImg, projectUrl }) => {
   return (
-    <div className="relative flex flex-items-center justify-center h-[350px] w-auto shadow-xl bg-gray-600 border-4 border-blue-500 shadow-gray-400 rounded-xl p-4 group  hover:bg-black/90 text-white">
+    <div className="relative flex flex-items-center justify-center h-[350px] w-auto   shadow-xl shadow-gray-400 rounded-xl  group  hover:bg-black/90 text-white">
       <Image
       
-        className="rounded-xl group-hover:opacity-10"
+        className="rounded-xl group-hover:opacity-10 border-4 border-blue-500"
         src={backgroundImg}
         alt="/"
       /> 
