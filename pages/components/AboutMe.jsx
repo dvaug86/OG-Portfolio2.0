@@ -18,7 +18,7 @@ const AboutMe = () => {
           }}
         >
           <h1 className="text-5xl tracking-widest uppercase text-center w-full object-contain mx-auto">
-            From civil / structrual engineering
+            From civil / structural engineering
           </h1>
         </motion.div>
         <motion.div

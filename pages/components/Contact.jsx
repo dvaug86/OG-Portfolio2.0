@@ -42,8 +42,8 @@ const Contact = () => {
           <h2 className="py-4">Get In Touch</h2>
 
           <div className="grid lg:grid-cols-5  gap-8">
-            {/* left */}
 
+            {/* left */}
             <div className=" col-span-3 lg:col-span-2 h-full bg-[#ecf0f3] shadow-xl shadow-gray-400 border-4 border-blue-500 rounded-xl p-4 ">
               <div>
                 <div className="lg:p-4 h-full ">
@@ -98,7 +98,6 @@ const Contact = () => {
             </div>
 
             {/* right */}
-
             <div className="col-span-3  h-auto  shadow-xl shadow-gray-400 bg-[#ecf0f3] border-4 border-blue-500 rounded-xl lg:p-4">
               <div className="p-4">
                 <form
