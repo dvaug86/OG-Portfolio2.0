@@ -75,7 +75,7 @@ const AboutMe = () => {
               }}
             >
               <p className="py-5 max-w-lg text-2xl text-left">
-                Hi! My name is David Vaughan. I am a fomer Civil/Structural
+                Hi! My name is David Vaughan. I am a former Civil/Structural
                 Engineer pursuing a career as a Full Stack Engineer. I am a firm
                 believer in continuous learning and self-improvement. I love
                 learning new things, especially from people who are more
