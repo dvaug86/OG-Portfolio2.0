@@ -40,7 +40,7 @@ const drews = () => {
             <p className="">Project</p>
             <h2>Overview</h2>
             <p>
-              This website was built for a client. It's the first phase of construction where they wanted a recreation of the wordpress site that they have. Their goal is to increase SEO as well as show off their portfolio.
+              This website was built for a client. It's the first phase of construction where they wanted a recreation of the WordPress site that they have. Their goal is to increase SEO as well as show off their portfolio.
             </p>
             <button
               className="px-8 py-2 mt-4 mr-8"
