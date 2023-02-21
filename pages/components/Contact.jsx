@@ -35,7 +35,7 @@ const Contact = () => {
       }}
     >
       <div id="contact" className="bg-[#D4D8DA] w-full h-full pt-24 pb-16 ">
-      <div className="max-w-[1240px] mx-auto  flex flex-col justify-center h-full">
+        <div className="max-w-[1240px] mx-auto  flex flex-col justify-center h-full">
           <p className="text-xl tracking-widest uppercase text-black">
             contact
           </p>
@@ -58,8 +58,9 @@ const Contact = () => {
                     <h2 className="py-2 uppercase">David Vaughan</h2>
                     <p className="text-xl">Full-Stack Developer</p>
                     <p className="my-15">
-                      I am available for full-time positions or freelance work.
+                      I am available for full-time positions or{" "}
                     </p>
+                    <p>freelance work.</p>
                   </div>
                 </div>
                 <div className="md:mt-36">
