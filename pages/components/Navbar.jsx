@@ -57,16 +57,17 @@ const Navbar = () => {
                     about
                   </li>
                 </Link>
-                <Link href="/#skills" scroll={false}>
-                  <li className="ml-5 text-white text-sm uppercase hover:border-b border-[#ecf0f3]">
-                    skills
-                  </li>
-                </Link>
                 <Link href="/#projects" scroll={false}>
                   <li className="ml-5 text-white text-sm uppercase hover:border-b border-[#ecf0f3]">
                     projects
                   </li>
                 </Link>
+                <Link href="/#skills" scroll={false}>
+                  <li className="ml-5 text-white text-sm uppercase hover:border-b border-[#ecf0f3]">
+                    skills
+                  </li>
+                </Link>
+                
                 <Link href="/#contact" scroll={false}>
                   <li className="ml-5 text-white text-sm uppercase hover:border-b border-[#ecf0f3]">
                     contact
@@ -107,7 +108,7 @@ const Navbar = () => {
             <h2 className=" uppercase   "> dv</h2>
             <div
               onClick={handleNav}
-              className="rounded-full shadow-xl shadow-black  cursor-pointer"
+              className="rounded-full p-2 shadow-lg shadow-black  cursor-pointer"
             >
               <AiOutlineClose className="  text-xl text-bold " />
             </div>
@@ -127,16 +128,17 @@ const Navbar = () => {
                   About
                 </li>
               </Link>
+             <Link href="/#projects" scroll={false}>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Projects
+                </li>
+              </Link>
               <Link href="/#skills" scroll={false}>
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Skills
                 </li>
               </Link>
-              <Link href="/#projects" scroll={false}>
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Projects
-                </li>
-              </Link>
+              
               <Link href="/#contact" scroll={false}>
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Contact
