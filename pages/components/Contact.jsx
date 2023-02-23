@@ -36,12 +36,12 @@ const Contact = () => {
     >
       <div id="contact" className="bg-[#D4D8DA] w-full h-full pt-24 pb-16 ">
         <div className="max-w-[1240px] mx-auto  flex flex-col justify-center h-full">
-          <p className="text-xl tracking-widest uppercase text-black">
+          <p className="text-xl px-2 tracking-widest uppercase text-black">
             contact
           </p>
-          <h2 className="py-4">Get In Touch</h2>
+          <h2 className="py-4 px-2 ">Get In Touch</h2>
 
-          <div className="grid lg:grid-cols-5  gap-8">
+          <div className="grid lg:grid-cols-5 px-2 gap-8">
 
             {/* left */}
             <div className=" col-span-3 lg:col-span-2 h-full bg-[#ecf0f3] shadow-xl shadow-gray-400 border-4 border-blue-500 rounded-xl p-4 ">

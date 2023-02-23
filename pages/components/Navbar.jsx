@@ -67,7 +67,6 @@ const Navbar = () => {
                     skills
                   </li>
                 </Link>
-                
                 <Link href="/#contact" scroll={false}>
                   <li className="ml-5 text-white text-sm uppercase hover:border-b border-[#ecf0f3]">
                     contact
@@ -128,7 +127,7 @@ const Navbar = () => {
                   About
                 </li>
               </Link>
-             <Link href="/#projects" scroll={false}>
+              <Link href="/#projects" scroll={false}>
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Projects
                 </li>
@@ -138,7 +137,7 @@ const Navbar = () => {
                   Skills
                 </li>
               </Link>
-              
+
               <Link href="/#contact" scroll={false}>
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Contact
@@ -150,17 +149,17 @@ const Navbar = () => {
             <div className="pt-40 ">
               <p className="uppercase text-xl">Connections</p>
               <div className="border-t border-gray-300 my-4"></div>
-              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
+              <div className="flex items-center my-4 w-full sm:w-[80%]">
                 <Link
                   href="https://www.linkedin.com/in/david-vaughan-97492774/"
                   target="_blank"
                 >
-                  <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-black p-3 mr-2 cursor-pointer hover:scale-105 ease-in duration-300">
                     <AiOutlineLinkedin />
                   </div>
                 </Link>
                 <Link href="https://github.com/dvaug86" target="_blank">
-                  <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-black p-3 ml-2 cursor-pointer hover:scale-105 ease-in duration-300">
                     <AiOutlineGithub />
                   </div>
                 </Link>

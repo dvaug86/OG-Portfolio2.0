@@ -7,7 +7,7 @@ const AboutMe = () => {
     <div id="about" className="w-full h-full pt-24 pb-16">
       <div className="max-w-[1240px] mx-auto  flex flex-col justify-center h-full">
         <motion.div
-          className="text-center md:text-center"
+          className="text-center "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -22,10 +22,10 @@ const AboutMe = () => {
           </h1>
         </motion.div>
         <motion.div
-          className="text-center md:text-center"
+          className="text-center  md:text-center"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.15 }}
           transition={{ delay: 0.2, duration: 0.75 }}
           variants={{
             hidden: { opacity: 0, x: 500 },
@@ -40,20 +40,20 @@ const AboutMe = () => {
           {/* left side */}
           <div>
             <motion.div
-              className="text-center md:text-center"
+              className="text-center  md:text-center"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.15 }}
               transition={{ delay: 0.5, duration: 1 }}
               variants={{
                 hidden: { opacity: 0, x: -200, y: -200 },
                 visible: { opacity: 1, x: 0, y: 0 },
               }}
             >
-              <div className="lg:p-2 h-full">
+              <div className="px-2 lg:p-2 h-full">
                 <div>
                   <Image
-                    className="rounded-xl sm:mx-auto hover:scale-105 ease-in col-span-2 border-4 border-blue-500 shadow-xl shadow-gray-400  duration-300"
+                    className=" rounded-xl sm:mx-auto hover:scale-105 ease-in col-span-2 border-4 border-blue-500 shadow-xl shadow-gray-400  duration-300"
                     src={aboutImg}
                     alt="aboutImgTemp"
                     priority
@@ -74,7 +74,7 @@ const AboutMe = () => {
                 visible: { opacity: 1, x: 0, y: 0 },
               }}
             >
-              <p className="py-5 max-w-lg text-2xl text-left">
+              <p className="px-2 py-5 max-w-lg text-2xl text-left">
                 Hi! My name is David Vaughan. I am a former Civil/Structural
                 Engineer pursuing a career as a Full Stack Engineer. I am a firm
                 believer in continuous learning and self-improvement. I love

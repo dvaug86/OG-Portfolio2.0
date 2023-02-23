@@ -23,7 +23,7 @@ const Skills = () => {
   const [isInView, setIsInView] = useState(false);
   return (
     <div id="skills" className="w-full h-full pt-24 pb-16 ">
-      <div className="max-w-[1240px] mx-auto  flex flex-col justify-center h-full">
+      <div className="max-w-[1240px] mx-auto px-2 flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-black">Skills</p>
         <h2 className="py-4">My Tool Box</h2>
         {/* container for skill badges */}
