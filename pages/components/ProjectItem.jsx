@@ -7,7 +7,7 @@ const ProjectItem = ({ title, backgroundImg, projectUrl }) => {
     <div className="relative flex flex-items-center justify-center h-[350px] w-auto   shadow-xl shadow-gray-400 rounded-xl  group  hover:bg-black/90 text-white">
       <Image
       
-        className="rounded-xl group-hover:opacity-10 border-4 border-blue-500"
+        className="rounded-xl object-cover group-hover:opacity-10 border-4 border-blue-500"
         src={backgroundImg}
         alt="/"
       /> 
