@@ -36,7 +36,7 @@ const AboutMe = () => {
             to software engineer
           </h1>
         </motion.div>
-        <div className='mt-10  flex-col md:flex-row md:grid-cols-4 justify-between items-center gap-8 flex mx-5 md:mx-auto'>
+        <div className='mt-10  flex-col md:flex-row md:grid-cols-4 justify-between items-center gap-8 flex px-2 md:mx-auto'>
           {/* left side */}
           <div>
             <motion.div

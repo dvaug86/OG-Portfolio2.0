@@ -23,7 +23,7 @@ const Skills = () => {
   const [isInView, setIsInView] = useState(false);
   return (
     <div id="skills" className="w-full h-full pt-24 pb-16 ">
-      <div className="max-w-[1240px] mx-auto px-2 flex flex-col justify-center h-full">
+      <div className="max-w-[1240px] mx-auto p-2 flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-black">Skills</p>
         <h2 className="py-4">My Tool Box</h2>
         {/* container for skill badges */}
@@ -38,7 +38,7 @@ const Skills = () => {
           viewport={{ once: true }}
           onViewportEnter={() => setIsInView(true)}
         >
-          <div className="  grid md:grid-cols-2 lg:grid-cols-4 gap-8 p-2">
+          <div className="  grid md:grid-cols-2 lg:grid-cols-4 gap-8 pt-2">
             <div className=" p-6 shadow-xl shadow-gray-400 bg-gray-700 border-4  border-blue-500 rounded-xl hover:scale-105 ease-in duration-300">
               <div className="flex flex-col m-auto gap-4 justify-center items-center">
                 <Image src={HTML} alt="/" onLoad={() => setIsLoaded(true)} />
