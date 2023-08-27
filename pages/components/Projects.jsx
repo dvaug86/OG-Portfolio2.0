@@ -49,7 +49,7 @@ const Projects = () => {
               projectUrl="/drews"
             />
           </motion.div>
-          <motion.div
+          {/* <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -80,7 +80,7 @@ const Projects = () => {
               backgroundImg={ReactTetris}
               projectUrl="/gym"
             />
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </div>

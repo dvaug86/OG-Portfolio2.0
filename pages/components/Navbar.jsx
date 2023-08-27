@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-screen h-24 shadow-2xl shadow-black/70 z-[100] bg-black">
+    <div className="fixed w-screen h-24 shadow-2xl shadow-black/70 z-[100] bg-black px-4">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         {/* left side */}
         <h2 className="md:hidden uppercase text-white ml-5"> dv</h2>
@@ -46,7 +46,7 @@ const Navbar = () => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <ul className="items-center hidden md:flex ">
+              <ul className="items-center hidden md:flex">
                 <Link href="/#home" scroll={false}>
                   <li className="ml-5 text-white text-sm uppercase hover:border-b border-[#ecf0f3]">
                     home

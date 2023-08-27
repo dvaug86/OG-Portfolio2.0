@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import contactImg from "../../public/assets/contactImg.png";
-// import resume from "../../public/assets/dvResume.pdf";
+import { Document } from "react-pdf";
 
 const Contact = () => {
   const {
@@ -42,7 +42,6 @@ const Contact = () => {
           <h2 className="py-4 px-2 ">Get In Touch</h2>
 
           <div className="grid lg:grid-cols-5 px-2 gap-8">
-
             {/* left */}
             <div className=" col-span-3 lg:col-span-2 h-full bg-[#ecf0f3] shadow-xl shadow-gray-400 border-4 border-blue-500 rounded-xl p-4 ">
               <div>
@@ -79,18 +78,18 @@ const Contact = () => {
                         <FaGithub />
                       </div>
                     </Link>
-                    {/* //////////////////////////////////////////////////
-                  <a download
-                    href="../../public/assets/dvResume.pdf"
-                    target="_blank"
-                    locale={false}
-                    rel="noopener noreferrer"
-                    alt="alt text"
-                  >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 text-black bg-[#f8f9fa]">
-                      <FaFileAlt size={20} />
-                    </div>
-                  </a> //////////////////////////////////////////////////////////////  */}
+
+                    <Link
+                      href="../../assets/David-Vaughan-Resume.pdf"
+                      locale={false}
+                      alt="alt text"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="rounded-full   bg-blue-500 text-white shadow-xl shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                        <FaFileAlt size={20} />
+                      </div>
+                    </Link>
                   </div>
                 </div>
                 <p className="text-center">Resume upon request</p>
