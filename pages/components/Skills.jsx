@@ -71,7 +71,7 @@ const Skills = () => {
             <div className="p-6 shadow-xl shadow-gray-400 bg-gray-700 border-4  border-blue-500 rounded-xl hover:scale-105 ease-in duration-300">
               <div className="flex flex-col  gap-10 justify-between items-center">
                 <Image src={NextJS} alt="/" onLoad={() => setIsLoaded(true)} />
-                <h3 className="text-3xl mt-[3.07px] text-white">NextJS</h3>
+                <h3 className="text-3xl mt-[3.07px] text-white">Next.js</h3>
               </div>
             </div>
 
@@ -82,7 +82,7 @@ const Skills = () => {
                   alt="/"
                   onLoad={() => setIsLoaded(true)}
                 />
-                <h3 className="text-3xl text-white">NodeJS</h3>
+                <h3 className="text-3xl text-white">Node.js</h3>
               </div>
             </div>
 
