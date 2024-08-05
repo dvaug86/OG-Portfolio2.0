@@ -36,7 +36,7 @@ const AboutMe = () => {
             to software engineer
           </h1>
         </motion.div>
-        <div className='mt-10  flex-col md:flex-row md:grid-cols-4 justify-between items-center gap-8 flex px-2 md:mx-auto'>
+        <div className="mt-10  flex-col md:flex-row md:grid-cols-4 justify-between items-center gap-8 flex px-2 md:mx-auto">
           {/* left side */}
           <div>
             <motion.div
@@ -77,12 +77,13 @@ const AboutMe = () => {
               <p className="px-2 py-5 max-w-lg text-2xl text-left">
                 Hi! My name is David Vaughan. I am a former Civil / Structural
                 Engineer pursuing a career as a Software Engineer. I am a firm
-                believer in continuous learning and self-improvement. I love
-                learning new things, especially from people who are more
-                experienced, so that I can adapt to better and more efficient
-                methods. On this site you will find websites I have created for
-                others, as well as personal projects I have built in my pursuit
-                of learning cutting-edge techniques in programming.
+                believer in continuous learning and self-improvement. One such
+                way is that I am currently working on Udemey's Java 17 Master
+                Class. I love learning new things, especially from people who
+                are more experienced, so that I can adapt to better and more
+                efficient methods. On this site you will find two websites I have
+                created for others, and soon some personal projects I am working on in
+                my pursuit of learning cutting-edge techniques in programming.
               </p>
             </motion.div>
           </div>
